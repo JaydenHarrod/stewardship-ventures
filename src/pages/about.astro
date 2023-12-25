@@ -1,0 +1,30 @@
+---
+import { changeLanguage } from "i18next";
+import Container from "@components/container.astro";
+import Features from "@components/features.astro";
+import Faq from "@components/faq.astro";
+import Hero from "@components/hero.astro";
+import Newsletter from "@components/newsletter.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+changeLanguage("en");
+---
+
+<Layout>
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">About</Fragment>
+			<Fragment slot="desc">The smarter way to scale.</Fragment>
+		</Sectionhead>
+		<div class="mx-auto prose prose-lg dark:prose-invert mt-14">
+			<p>
+				Stewardship Ventures helps startups and SMEs link business results with technology. Unlike agencies offering only software
+				development, we serve as your temporary CTO by default, providing access to experienced tech leadership and talented devleopment teams
+				at a lower cost, so you can focus on a sustainable business.
+			</p>
+			<p>Every CTO and business is different but here is how we roughly do things.</p>
+		</div>
+		<Newsletter />
+	</Container>
+</Layout>

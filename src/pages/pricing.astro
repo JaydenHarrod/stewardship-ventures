@@ -1,0 +1,102 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Pricing from "@components/pricing.astro";
+import Logos from "@components/logos.astro";
+import Faq from "@components/faq.astro";
+
+changeLanguage("en");
+
+const pricingData = [
+	{
+		name: "Advising CTO",
+		price: "$3,500/m",
+		popular: false,
+		features: [
+			"5 hours / week",
+			"Access to a seasoned technology leader",
+			"We spend time to understand your business",
+			"No equity loss or long-term commitments",
+			"Monthly risk & recommendations report",
+			"Save time & money avoiding mistakes",
+			"Avaliable up to 4 hours of meetings",
+			"Ask questions asycnchronously",
+			"Get a second opinion",
+			"Fully remote",
+		],
+		button: {
+			text: "Subscribe Now",
+			link: "/",
+		},
+	},
+	{
+		name: "Fractional CTO",
+		price: {
+			monthly: "$15,000/m",
+			annual: "$16",
+			discount: "10%",
+			original: "$24",
+		},
+		popular: true,
+		features: [
+			"25 hours / week",
+			"Includes 'Advising CTO'",
+			"Assist operating functions",
+			"Limit risk and libailities",
+			"Provide progress reports",
+			"Strategic thinking",
+			"Manage delivery",
+			"Manage people",
+			"Tools & process",
+			"Build capability",
+		],
+		button: {
+			text: "Subscribe Now",
+			link: "#",
+		},
+	},
+	{
+		name: "Stewardship Development Team",
+		price: "$30,000/m",
+		popular: false,
+		features: [
+			"Includes 'Fractional CTO'",
+			"Manage delivery",
+			"'Shape Up' principals",
+			"Web and/or Mobile",
+			"+ FTE Senior Designer",
+			"+ FTE Senior Backender",
+			"+ FTE Senior Frontender",
+		],
+		button: {
+			text: "Contact Us",
+			link: "/contact",
+		},
+	},
+	{
+		name: "Stewardship Development Team Plus",
+		price: "$40,000/m",
+		popular: false,
+		features: ["Includes 'Fraction CTO'", "Increase metric growth", "+ SEO Audit", "+ FTE Data Analysis", "+ FTE Martech Developer"],
+		button: {
+			text: "Contact Us",
+			link: "/contact",
+		},
+	},
+];
+---
+
+<Layout title="Pricing">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">Pricing</Fragment>
+			<Fragment slot="desc">Scale as needed to match your ambitions.</Fragment>
+		</Sectionhead>
+
+		<div class="grid md:grid-cols-2 gap-8 mx-auto max-w-4xl mt-20">
+			{pricingData.map((item) => <Pricing plan={item} />)}
+		</div>
+	</Container>
+</Layout>
