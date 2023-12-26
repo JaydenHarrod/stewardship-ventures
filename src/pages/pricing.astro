@@ -3,9 +3,7 @@ import { changeLanguage } from "i18next";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Pricing from "@components/pricing.astro";
-import Logos from "@components/logos.astro";
-import Faq from "@components/faq.astro";
+import PricingPlan from "@components/pricing.astro";
 
 changeLanguage("en");
 
@@ -13,7 +11,6 @@ const pricingData = [
 	{
 		name: "Advising CTO",
 		price: "$3,500/m",
-		popular: false,
 		features: [
 			"5 hours / week",
 			"Access to a seasoned technology leader",
@@ -27,19 +24,13 @@ const pricingData = [
 			"Fully remote",
 		],
 		button: {
-			text: "Subscribe Now",
-			link: "/",
+			text: "Contact Us",
+			link: "/contact",
 		},
 	},
 	{
 		name: "Fractional CTO",
-		price: {
-			monthly: "$15,000/m",
-			annual: "$16",
-			discount: "10%",
-			original: "$24",
-		},
-		popular: true,
+		price: "$15,000/m",
 		features: [
 			"25 hours / week",
 			"Includes 'Advising CTO'",
@@ -53,14 +44,13 @@ const pricingData = [
 			"Build capability",
 		],
 		button: {
-			text: "Subscribe Now",
-			link: "#",
+			text: "Contact Us",
+			link: "/contact",
 		},
 	},
 	{
 		name: "Stewardship Development Team",
 		price: "$30,000/m",
-		popular: false,
 		features: [
 			"Includes 'Fractional CTO'",
 			"Manage delivery",
@@ -78,7 +68,6 @@ const pricingData = [
 	{
 		name: "Stewardship Development Team Plus",
 		price: "$40,000/m",
-		popular: false,
 		features: ["Includes 'Fraction CTO'", "Increase metric growth", "+ SEO Audit", "+ FTE Data Analysis", "+ FTE Martech Developer"],
 		button: {
 			text: "Contact Us",
@@ -88,7 +77,7 @@ const pricingData = [
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Stewardship Ventures - Pricing">
 	<Container>
 		<Sectionhead>
 			<Fragment slot="title">Pricing</Fragment>
@@ -96,7 +85,7 @@ const pricingData = [
 		</Sectionhead>
 
 		<div class="grid md:grid-cols-2 gap-8 mx-auto max-w-4xl mt-20">
-			{pricingData.map((item) => <Pricing plan={item} />)}
+			{pricingData.map((item) => <PricingPlan plan={item} />)}
 		</div>
 	</Container>
 </Layout>

@@ -6,7 +6,6 @@ import Container from "@components/container.astro";
 import Posts from "@components/blog/posts.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pagination from "@components/blog/pagination.astro";
-import Newsletter from "@components/newsletter.astro";
 
 changeLanguage("en");
 
@@ -42,14 +41,13 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout title="Blog">
+<Layout title="Stewardship Ventures - Blog">
 	<Container>
 		<Sectionhead>
 			<Fragment slot="title">Blog</Fragment>
 			<Fragment slot="desc">Thoughts on Product and Engineering practices.</Fragment>
 		</Sectionhead>
-		<Posts posts={page.data} />
-		<Pagination class="mt-20" prevUrl={page.url.prev} nextUrl={page.url.next} />
-		<Newsletter />
+		<!-- <Posts posts={page.data} /> -->
+		<!-- <Pagination class="mt-20" prevUrl={page.url.prev} nextUrl={page.url.next} /> -->
 	</Container>
 </Layout>

@@ -31,6 +31,7 @@ const styles = {
 
 <a
 	href={href.startsWith("http") ? href : localizePath(href)}
+	style={{ zIndex: 1000 }}
 	{...rest}
 	class:list={[
 		"rounded-md text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
