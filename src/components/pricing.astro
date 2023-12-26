@@ -13,6 +13,7 @@ const { plan } = Astro.props;
 			{plan.price}
 		</span>
 	</p>
+	<p class="text-xs mt-2 text-gray-900 dark:text-white">AUD + GST</p>
 	<Link href={plan.button.link} aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">
 		{plan.button.text || "Get Started"}
 	</Link>

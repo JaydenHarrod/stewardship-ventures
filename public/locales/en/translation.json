@@ -1,9 +1,9 @@
 {
 	"hero": {
-		"title": "Your unfair advantage",
-		"subtitle": "our innovative service that enables technology ventures to thrive",
+		"title": "Transformative Software Solutions",
+		"subtitle": "Your Product Vision, Our Technical Expertise.",
 		"main_button_text": "Learn more",
-		"secondary_button_text": "Plans & pricing"
+		"secondary_button_text": "Pricing"
 	},
 	"header": {
 		"features": "Features",
@@ -15,8 +15,8 @@
 	},
 	"features": {
 		"learn_more": "Learn more",
-		"title": "Preparing for lift off",
-		"subtitle": "How we help you win",
+		"title": "Your Unfair Advantage",
+		"subtitle": "Helping Technology Startups",
 		"description": "We believe sustainable management of how technology is developed, maintained, and interacted with is how you win. Our multidisciplinary team has decades of experience across marketing, product, design and engineering.",
 		"astro": "Astro is the all-in-one web framework designed for speed. Pull your content from anywhere and deploy everywhere, all powered by your favorite UI components and libraries.",
 		"alpine": "Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.",
