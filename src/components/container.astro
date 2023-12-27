@@ -4,6 +4,7 @@ const { class: className } = Astro.props;
 
 <div class:list={["max-w-screen-xl mx-auto px-5", className]}>
 	<div class="relative isolate dark:bg-stone-950">
+		<slot />
 		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
 			<svg
 				class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] animate-slide"
@@ -28,7 +29,6 @@ const { class: className } = Astro.props;
 			</svg>
 		</div>
 	</div>
-	<slot />
 </div>
 
 <style>
