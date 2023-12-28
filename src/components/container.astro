@@ -3,7 +3,7 @@ const { class: className } = Astro.props;
 ---
 
 <div class:list={["max-w-screen-xl mx-auto px-5", className]}>
-	<div class="relative isolate dark:bg-stone-950">
+	<div class="relative isolate">
 		<slot />
 		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
 			<svg
