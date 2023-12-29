@@ -7,6 +7,10 @@ import { t } from "i18next";
 
 export const menuitems = [
 	{
+		title: "Home",
+		path: "/",
+	},
+	{
 		title: "About",
 		path: "/about",
 	},
@@ -31,14 +35,19 @@ export const menuitems = [
 
 <div
 	x-data="{open: window.innerWidth < 768 ? false : true}"
-	class="flex flex-col max-w h-16 pt-4 px-4 sticky top-0 bg-neutral-900 bg-opacity-60 mx-auto md:items-center md:justify-center md:flex-row md:px-6 lg:px-8 z-10 shadow-lg border-b border-neutral-950">
+	class="flex flex-col md:mt-6 max-w h-16 pt-4 px-4 top-0 mx-auto md:items-center md:justify-center md:flex-row md:px-6 lg:px-8 z-10 relative">
 	<div class="p-4 flex flex-row justify-between">
 		<a
 			href={localizePath("/")}
 			class="flex gap-4 items-center text-xl font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-gray-200 focus:outline-none focus:shadow-outline">
 			<!-- <Icon name="logo" width="64" class="dark:invert" alt="Logo" /> -->
-			<img src="/images/logo-mark.png" alt="Logo" class="mt-3 shadow-sm rounded-full shadow-orange-300 hover:scale-105" width="54" />
-			<div class="mr-80">
+			<img
+				src="/images/logo-mark.png"
+				alt="Logo"
+				class="mt-3 shadow-sm rounded-full shadow-orange-300 transform transition-transform hover:scale-105"
+				width="54"
+			/>
+			<div class="mr-40">
 				<p class="flex flex-col bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text font-extrabold">STEWARDSHIP</p>
 				<p class="flex flex-col -mt-2 bg-gradient-to-b from-orange-200 to-orange-500 text-transparent bg-clip-text font-light prose-sm">
 					VENTURES
@@ -75,7 +84,7 @@ export const menuitems = [
 		x-transition:leave="transition ease-in duration-200"
 		x-transition:leave-start="opacity-100 transform scale-100"
 		x-transition:leave-end="opacity-0 transform scale-90"
-		class="md:mt-0 lg:pl-8 md:items-center md:pb-0 flex-col gap-2 transition-all ease-out md:transition-none md:justify-center md:flex-row hidden">
+		class="bg-neutral-900 md:bg-transparent border md:border-none border-neutral-600 rounded-lg shadow-md shadow-neutral-800 md:shadow-none pt-4 md:pt-0 md:mt-0 lg:pl-8 md:items-center md:pb-0 flex-col gap-2 transition-all ease-out md:transition-none md:justify-center md:flex-row hidden">
 		<div class="flex flex-col flex-grow gap-6 r md:flex md:flex-row md:mx-auto">
 			{
 				menuitems.map((item) => (

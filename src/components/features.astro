@@ -25,21 +25,21 @@ const features = [
 		url: "https://github.com/yassinedoghri/astro-i18next",
 	},
 	{
-		title: "Web App Development",
+		title: "Web Development",
 		description:
 			"Thinking of building a SaaS web app for your customers? We're experts in building websites and web applications using modern technologies.",
 		icon: "bx:bxs-window-alt",
 		url: "https://alpinejs.dev/",
 	},
 	{
-		title: "Mobile App Development",
+		title: "Mobile Development",
 		description:
 			"Thinking of building a SaaS mobile app for your customers? We know the limitations of mobile devices and how to architect apps that work well.",
 		icon: "bx:bxs-data",
 		url: "https://tailwindcss.com/",
 	},
 	{
-		title: "Advice",
+		title: "Advice & Guidance",
 		description: "We can be a sounding board for your ideas and help you make the right technology decisions.",
 		icon: "bx:bxs-user",
 		url: "https://giscus.app/",
@@ -77,8 +77,8 @@ const features = [
 			at a fraction of the cost.
 		</p>
 	</div>
-	<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-		<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+	<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24">
+		<dl class="grid max-w-xl grid-cols-1 gap-x-6 gap-y-12 text-center lg:max-w-none lg:grid-cols-3">
 			{
 				features.map((item) => (
 					<div class="flex flex-col">
@@ -88,9 +88,6 @@ const features = [
 							</div>
 							{item.title}
 						</dt>
-						<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-200">
-							<p class="flex-auto">{t(item.description)}</p>
-						</dd>
 					</div>
 				))
 			}
