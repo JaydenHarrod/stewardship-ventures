@@ -31,7 +31,9 @@ export const menuitems = [
 				class="flex gap-4 items-center text-xl font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
 				<!-- <Icon name="logo" width="64" class="dark:invert" alt="Logo" /> -->
 				<img src="/images/logo-mark.png" alt="Logo" width="54" />
-				<div class="flex flex-col bg-gradient-to-b from-slate-100 to-slate-300 text-transparent bg-clip-text font-extrabold">Stewardship</div>
+				<div class="flex flex-col bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text font-extrabold">
+					Stewardship
+				</div>
 			</a>
 			<button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
 				<span class="sr-only">Open main menu</span>
@@ -83,7 +85,7 @@ export const menuitems = [
 								document.removeEventListener('astro:page-load', checkPath);
 								document.addEventListener('astro:page-load', checkPath);
 							}`}
-							x-bind:class="{ 'bg-slate-200 bg-opacity-80 dark:text-gray-900': isActive }"
+							x-bind:class="{ 'bg-neutral-100 dark:text-gray-900': isActive }"
 							data-path={item.path}>
 							{t(item.title)}
 						</Link>

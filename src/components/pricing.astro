@@ -4,7 +4,7 @@ import Link from "@components/ui/link.astro";
 const { plan } = Astro.props;
 ---
 
-<div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-300 bg-gray-50 dark:bg-stone-950 dark:ring-gray-700">
+<div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 bg-gray-50 dark:bg-neutral-900 dark:ring-gray-700">
 	<div class="flex items-center justify-between gap-x-4">
 		<h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900 dark:text-white">{plan.name}</h3>
 	</div>
@@ -17,7 +17,7 @@ const { plan } = Astro.props;
 	<Link href={plan.button.link} aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">
 		{plan.button.text || "Get Started"}
 	</Link>
-	<ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300 xl:mt-10">
+	<ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-200 xl:mt-10">
 		{
 			plan.features.map((item) => (
 				<li class="flex gap-x-3">
