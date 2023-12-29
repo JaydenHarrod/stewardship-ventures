@@ -1,6 +1,6 @@
 ---
 title: "SaaS Mastery: Strategies and Secrets for Building Lucrative Products in the Software Development Landscape"
-draft: false
+draft: true
 author: Jayden Harrod
 tags:
     - strategy
