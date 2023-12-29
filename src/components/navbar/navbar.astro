@@ -24,15 +24,20 @@ export const menuitems = [
 <div
 	x-data="{open: window.innerWidth < 768 ? false : true}"
 	class="flex flex-col max-w px-4 mx-auto md:items-center md:justify-center md:flex-row md:px-6 lg:px-8 z-10 md:pt-2 shadow-lg relative">
-	<div class="flex max-w-auto">
+	<div class="flex max-w-100">
 		<div class="p-4 flex flex-row items-center justify-between">
 			<a
 				href={localizePath("/")}
 				class="flex gap-4 items-center text-xl font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
 				<!-- <Icon name="logo" width="64" class="dark:invert" alt="Logo" /> -->
 				<img src="/images/logo-mark.png" alt="Logo" width="54" />
-				<div class="flex flex-col bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text font-extrabold">
-					Stewardship
+				<div>
+					<span class="flex flex-col bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text font-extrabold">
+						Stewardship
+					</span>
+					<span class="flex flex-col bg-gradient-to-b from-orange-200 to-orange-500 text-transparent bg-clip-text font-light prose-sm">
+						VENTURES
+					</span>
 				</div>
 			</a>
 			<button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
@@ -85,7 +90,7 @@ export const menuitems = [
 								document.removeEventListener('astro:page-load', checkPath);
 								document.addEventListener('astro:page-load', checkPath);
 							}`}
-							x-bind:class="{ 'bg-neutral-100 dark:text-gray-900': isActive }"
+							x-bind:class="{ ' dark:text-gray-300': isActive }"
 							data-path={item.path}>
 							{t(item.title)}
 						</Link>
