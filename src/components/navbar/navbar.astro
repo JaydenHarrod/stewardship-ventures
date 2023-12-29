@@ -29,7 +29,7 @@ export const menuitems = [
 			href={localizePath("/")}
 			class="flex gap-3 items-center text-xl font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
 			<Icon name="logo" width="64" class="dark:invert" alt="Logo" />
-			<div class="flex flex-col">Stewardship</div>
+			<div class="flex flex-col bg-gradient-to-b from-slate-100 to-slate-300 text-transparent bg-clip-text">Stewardship</div>
 		</a>
 		<button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
 			<span class="sr-only">Open main menu</span>
@@ -62,7 +62,7 @@ export const menuitems = [
 		x-transition:leave-start="opacity-100 transform scale-100"
 		x-transition:leave-end="opacity-0 transform scale-90"
 		class="md:mt-0 lg:pl-8 md:items-center flex-grow pb-4 md:pb-0 flex-col gap-2 transition-all ease-out md:transition-none md:justify-center md:flex-row hidden">
-		<div class="flex flex-col flex-grow text-center gap-2 md:justify-center md:items-center md:flex md:flex-row md:mx-auto">
+		<div class="flex flex-col flex-grow text-center gap-6 md:justify-center md:items-center md:flex md:flex-row md:mx-auto">
 			{
 				menuitems.map((item) => (
 					<Link
@@ -81,7 +81,7 @@ export const menuitems = [
 								document.removeEventListener('astro:page-load', checkPath);
 								document.addEventListener('astro:page-load', checkPath);
 							}`}
-						x-bind:class="{ 'bg-gradient-to-br from-blue-400 to-blue-600 text-white': isActive }"
+						x-bind:class="{ 'bg-slate-200 bg-opacity-80 dark:text-gray-900': isActive }"
 						data-path={item.path}>
 						{t(item.title)}
 					</Link>
@@ -94,13 +94,13 @@ export const menuitems = [
 					type="button"
 					class="text-white
 					bg-gradient-to-br
-					from-blue-400
-					to-blue-600
+					from-indigo-500
+					to-indigo-800
 					hover:bg-gradient-to-bl
 					focus:ring-4
 					focus:outline-none
-					focus:ring-blue-200
-					dark:focus:ring-blue-800
+					focus:ring-indigo-200
+					dark:focus:ring-indigo-800
 					font-medium
 					rounded-lg
 					text-sm

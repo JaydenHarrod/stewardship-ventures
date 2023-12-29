@@ -57,7 +57,7 @@ const makeTitle = title ?? "Stewardship Ventures";
 				if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
 					document.documentElement.classList.add("dark");
 				} else {
-					document.documentElement.classList.remove("dark");
+					document.documentElement.classList.add("dark");
 				}
 			}
 			handleThemeChange();
@@ -65,7 +65,7 @@ const makeTitle = title ?? "Stewardship Ventures";
 			document.addEventListener("astro:after-swap", handleThemeChange);
 		</script>
 	</head>
-	<body class="dark:bg-blue-950">
+	<body class="dark:bg-indigo-950">
 		<Navbar />
 		<slot />
 		<Footer />
