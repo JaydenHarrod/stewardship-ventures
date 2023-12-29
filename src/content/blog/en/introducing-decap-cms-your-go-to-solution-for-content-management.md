@@ -1,74 +1,21 @@
 ---
-title: "Introducing Decap CMS Your Goto Solution for Content Management"
+title: "From Idea to Profit: A Step-by-Step Journey into Product-Led SaaS Development for Beginners"
 draft: false
-author: Jon Doe
+author: Jayden Harrod
 tags:
-  - decapcms
+    - strategy
+    - operations
+    - product
 image:
-  src: /images/decapcms.png
-  alt: Decap CMS
-snippet: Decap CMS, formerly known as Netlify CMS, is an open-source content
-  management system offering developers a seamless way to manage content for
-  static site generators.
-publishDate: 2023-07-01 23:14
-category: Tutorials
+    src: /images/tailwind.png
+    alt: Product-Led Companies
+snippet: Astro is a modern front-end framework that brings an interesting
+    paradigm shift in web application development, focusing on sending less
+    JavaScript and leveraging modern browser features.
+publishDate: 2024-01-01 22:50
+category: Product
 ---
 
-Decap CMS, formerly known as Netlify CMS, is an open-source content management system that offers developers a seamless way to manage content for static site generators.
+Product-led growth is a business strategy that relies on using your product as the main vehicle to acquire, activate, and retain customers.
 
-## What is Decap CMS?
-
-Decap CMS is a Git-based CMS that allows developers and content creators to add, update, and delete content directly from the git repo of the site. This provides the benefits of version controlled content, allowing for easy rollbacks, branching, and other Git operations.
-
-## Key Features of Decap CMS
-
-### Open Source
-
-Being open-source means that you have access to the source code and can modify and customize it according to your project requirements. This allows for high flexibility in adapting the CMS to your specific needs.
-
-### Git-Based
-
-Decap CMS uses Git workflows for content management. Every edit becomes a commit, every batch of edits becomes a pull request, and every saved draft is just a branch.
-
-### Easy to Use
-
-Decap CMS provides a user-friendly editorial interface for content creators, freeing them from needing to understand Git or code.
-
-## Getting Started with Decap CMS
-
-Getting started with Decap CMS is as easy as adding two files to your project: `admin/index.html` and `admin/config.yml`.
-
-```html
-<!-- admin/index.html -->
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-</head>
-<body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^2.0.0/dist/decap-cms.js"></script>
-</body>
-</html>
-```
-
-```yaml
-# admin/config.yml
-backend:
-  name: github
-  repo: owner/repo
-media_folder: "img/uploads"
-public_folder: "/img/uploads"
-collections:
-  - name: "post"
-    label: "Post"
-    folder: "_posts"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-```
-
-In the era of Jamstack, Decap CMS is paving the way for modern, Git-based content management. With its simplicity and flexibility, it's an excellent choice for developers and content creators alike.
+<a href="#top">[Top]</a>
