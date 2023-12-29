@@ -45,7 +45,7 @@ const { page } = Astro.props;
 	<Container>
 		<Sectionhead>
 			<Fragment slot="title">Blog</Fragment>
-			<Fragment slot="desc">Thoughts on Product and Engineering practices.</Fragment>
+			<Fragment slot="desc">Thoughts on Product and Engineering.</Fragment>
 		</Sectionhead>
 		<Posts posts={page.data} />
 		<Pagination class="mt-20" prevUrl={page.url.prev} nextUrl={page.url.next} />
