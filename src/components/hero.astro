@@ -7,18 +7,14 @@ import { t } from "i18next";
 const { dynamic = false } = Astro.props;
 ---
 
-<div class="sm:pt-10">
-	<div class="mx-auto max-w-7xl pt-14">
-		<div class="mx-auto max-w-2xl text-center">
-			<h1 class="text-4xl font-bold tracking-tight bg-gradient-to-b from-neutral-100 to-neutral-400 text-transparent bg-clip-text sm:text-6xl">
-				We Build Wonderful Software Products
-			</h1>
-			<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-400">
-				Partnering With Entrepreneurs To Develop & Distribute Software Products
-			</p>
-		</div>
-		<div class="flex justify-center items-center mt-4 md:mt-8">
-			<Image class="inline-block mt-12 md:mt-20" src={abstractDottedGlobeIllustration} alt="Astros" width={600} height={600} loading="eager" />
-		</div>
+<div class="mx-auto max-w-7xl pt-24">
+	<div class="mx-auto max-w-2xl text-center">
+		<h1 class="text-4xl font-bold tracking-tight bg-gradient-to-b from-neutral-100 to-neutral-400 text-transparent bg-clip-text sm:text-6xl">
+			We Build Wonderful Software Products
+		</h1>
+		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-400">Partnering With Entrepreneurs To Develop & Distribute Software Products</p>
+	</div>
+	<div class="flex justify-center items-center mt-4 md:mt-8">
+		<Image class="inline-block mt-12 md:mt-20" src={abstractDottedGlobeIllustration} alt="Astros" width={600} height={600} loading="eager" />
 	</div>
 </div>

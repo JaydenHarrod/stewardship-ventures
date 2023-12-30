@@ -54,7 +54,7 @@ export const menuitems = [
 				</p>
 			</div>
 		</a>
-		<button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
+		<button class="md:hidden text-gray-500 w-10 h-10 mt-1 relative focus:outline-none" @click="open = !open">
 			<span class="sr-only">Open main menu</span>
 			<div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
 				<span
@@ -92,7 +92,7 @@ export const menuitems = [
 						href={localizePath(item.path)}
 						style="hover"
 						size="sm"
-						class="mb-4"
+						class="mb-4 dark:prose-lg"
 						x-data="{ isActive: false }"
 						x-init={`() => {
 								const path = $el.getAttribute('data-path');
@@ -113,5 +113,4 @@ export const menuitems = [
 			}
 		</div>
 	</nav>
-</div>}>
-
+</div>
