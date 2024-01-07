@@ -48,49 +48,131 @@ const features = [
 ---
 
 <div class="relative mx-auto max-w-5xl px-6 lg:px-8">
-	<div class="mx-auto max-w-2xl lg:text-center mb-32">
-		<p class="text-gray-400 mb-2 prose-md">Thinking About</p>
+	<div id="comparison" class="mx-auto max-w-4xl lg:text-center mb-20">
+		<p class="text-gray-400 mb-2 prose-md">Seriously better...</p>
 		<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-			Building a Software Product?
+			Fractional CTO
 		</p>
-		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
-			You've done the hard part. You've been running a business, community, or brand for years - acquiring customers, and have become an
-			industry leader. Now, it's time to effortlessly grow your impact through a software asset.
-		</p>
-		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
-			At Stewardship Ventures, we're not your usual software development agency. We choose only a select few ventures each year. We take a
-			personal approach to help you develop your business operations to support your new software asset, acting as your part-time Chief
-			Technology Officer (CTO).
-		</p>
-		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">Think of us as your all-in-one CTO, agency, and incubator.</p>
+		<div class="flex gap-6">
+			<div
+				class="flex-grow lg:text-left mt-8 p-8 border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-neutral-700 transition-transform hover:scale-105">
+				<div class="flex flex-col gap-4">
+					<p class="text-white prose-xl font-black">Stop doing this 😳</p>
+					<p class="text-white">Expensive — FTE CTO wage, super, equity</p>
+					<p class="text-white">Costly — months spent recruiting</p>
+					<p class="text-white">ROI - blindly trusting agency promises</p>
+					<p class="text-white">Locked-in - partnerships can go ugly</p>
+					<p class="text-white">Talent - good is expensive and taken</p>
+					<p class="text-white">Burning - running out of money, VCs</p>
+				</div>
+			</div>
+			<div
+				class="flex-grow lg:text-left mt-8 p-8 border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-neutral-700 transition-transform hover:scale-105">
+				<div class="flex flex-col gap-4">
+					<p class="text-white prose-xl font-black">Start doing this 🚀</p>
+					<p class="text-white">Cost effective — part-time, as needed, invoiced</p>
+					<p class="text-white">Time effective — partner with a CTO in days</p>
+					<p class="text-white">Insurance - quality & risk control</p>
+					<p class="text-white">Flexible - month to month contract</p>
+					<p class="text-white">Seasoned - access to experience</p>
+					<p class="text-white">Prodct-led - profitable and content</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="mx-auto max-w-2xl lg:text-center">
-		<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-			More Than a Software Agency
-		</p>
-		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
-			We team up with existing businesses to bring together proven distribution vehicles, outcome operating models, and product excellence. We
-			seek to understand your industry and put your customers at the heart of the solution. We firmly believe our <span
-				class="italic text-gray-400">
-				product-led
-			</span>
-			 approach is a fraction of the time & cost of an internal team or hiring a typical software agency whilst seeking profitability.
-		</p>
-	</div>
-	<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-8">
-		<dl class="grid max-w-xl grid-cols-1 gap-x-6 gap-y-12 text-center lg:max-w-none lg:grid-cols-3">
-			{
-				features.map((item) => (
-					<div class="flex flex-col">
-						<dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-gray-200">
-							<div class="h-5 w-5 flex-none text-black dark:text-gray-200">
-								<Icon name={item.icon} />
-							</div>
-							{item.title}
-						</dt>
+
+	<a href="https://app.cal.com/jayden" target="_blank">
+		<div class="mx-auto max-w-2xl lg:text-center mb-20 p-6 border border-gray-200 rounded-lg shadow dark:bg-neutral-800 dark:border-neutral-700">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Book an initial consultation ☎️</h5>
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We'll catchup to assess fit and discuss your technology needs.</p>
+		</div>
+	</a>
+	<div class="mx-auto max-w-2xl lg:text-center mb-20">
+		<div id="greenfield" class="mx-auto max-w-2xl lg:text-center pt-10">
+			<p class="text-gray-400 mb-2 prose-md">Get your idea to market with vetted outsourcing</p>
+			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
+				Build A Greenfield Product
+			</p>
+			<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
+				As an ex lead software engineer of award-winning ASX listed startups, Jayden has managed hundreds of software projects. He knows the
+				good, the bad, and the ugly. He will organise your project, and help you make the right decisions. Like building a house, you want
+				your tradespeople to be vetted. Jayden will find your outsourced development team and interview each candidate to ensure they are the
+				right fit to protect your investment.
+			</p>
+			<a
+				href="https://app.cal.com/jayden"
+				target="_blank"
+				class="inline-flex items-center transform transition-transform hover:scale-105 px-3 py-2 mt-4 text-sm font-medium text-center text-white rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800">
+				Hire me as your Fractional CTO
+				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+				</svg>
+			</a>
+		</div>
+		<div id="existing" class="mx-auto max-w-2xl lg:text-center mt-20 pt-10">
+			<p class="text-gray-400 mb-2 prose-md">Bring your technology in-house</p>
+			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
+				Scale An Existing Product
+			</p>
+			<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
+				You've got a product that's working, but you're struggling to scale. What you have was built by an outsourced team. You need to bring
+				your technology in-house, but you don't know where to start. Jayden will help you transition to a technology operating model and
+				strategy that will scale your business.
+			</p>
+			<a
+				href="https://app.cal.com/jayden"
+				target="_blank"
+				class="inline-flex items-center transform transition-transform hover:scale-105 px-3 py-2 mt-4 text-sm font-medium text-center text-white rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800">
+				Hire me as your Interim CTO
+				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+				</svg>
+			</a>
+		</div>
+		<div id="promo" class="mx-auto max-w-2xl lg:text-center mt-32">
+			<p class="text-gray-400 mb-2 prose-md">Meet your</p>
+			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
+				CTO
+			</p>
+			<div class="mx-auto max-w-2xl lg:text-left mt-8 p-8 border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-neutral-700">
+				<div class="flex gap-4">
+					<img src="/images/jayden.jpeg" alt="Profile Picture" class="w-24 h-24 rounded-lg" />
+					<div>
+						<h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Jayden Harrod</h5>
+						<h5 class="text-md font-semibold tracking-tight text-gray-900 dark:text-white">Previously:</h5>
+						<h5 class="text-md tracking-tight text-gray-900 dark:text-white">
+							Microsoft, Lenovo, Camplify, Hipages, nib, Digivizer, and more...
+						</h5>
 					</div>
-				))
-			}
-		</dl>
+				</div>
+				<p class="mt-4 font-normal text-gray-700 dark:text-gray-400">
+					A multifaceted background in marketing, operations, product, and engineering combines technical skills with a strategic business
+					mindset and cultivates into over a decade of building digital business outcomes.
+				</p>
+			</div>
+		</div>
+		<a href="https://app.cal.com/jayden" target="_blank">
+			<div
+				class="mx-auto max-w-2xl lg:text-center mb-20 mt-4 p-6 border border-gray-200 rounded-lg shadow dark:bg-neutral-800 dark:border-neutral-700">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Book an initial consultation ☎️</h5>
+				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We'll catchup to assess fit and discuss your technology needs.</p>
+			</div>
+		</a>
+		<!-- <div class="mx-auto max-w-2xl lg:text-center mt-20 pt-10">
+			<dl class="grid max-w-xl grid-cols-1 gap-x-6 gap-y-12 text-center lg:max-w-none lg:grid-cols-3">
+				{
+					features.map((item) => (
+						<div class="flex flex-col">
+							<dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-gray-200">
+								<div class="h-5 w-5 flex-none text-black dark:text-gray-200">
+									<Icon name={item.icon} />
+								</div>
+								{item.title}
+							</dt>
+						</div>
+					))
+				}
+			</dl>
+		</div> -->
 	</div>
 </div>
