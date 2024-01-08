@@ -20,12 +20,12 @@
 /* Custom scrollbar */
 ::-webkit-scrollbar-track {
 	border: none;
-	background-color: white;
+	background-color: black;
 }
 
 ::-webkit-scrollbar {
 	width: 10px;
-	background-color: white;
+	background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -41,7 +41,7 @@
 		background-color: rgb(12 10 9);
 	}
 	::-webkit-scrollbar-thumb {
-		background-color: white;
+		background-color: gray;
 	}
 }
 

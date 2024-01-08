@@ -7,15 +7,15 @@ const { plan } = Astro.props;
 <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 bg-gray-50 dark:bg-neutral-900 dark:ring-gray-700 flex flex-col justify-between">
 	<div>
 		<div class="flex items-center justify-between gap-x-4">
-			<h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900 dark:text-gray-200">{plan.name}</h3>
+			<h3 id="tier-enterprise" class="text-lg font-semibold leading-8 dark:text-gray-200">{plan.name}</h3>
 		</div>
 		<p class="mt-6 flex items-baseline gap-x-1">
-			<span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200">
+			<span class="text-4xl font-bold tracking-tight dark:text-purple-300">
 				{plan.price}
 			</span>
 		</p>
-		<p class="text-orange-200 font-bold mt-2">{plan.duration}</p>
-		<p class="text-xs mt-2 text-gray-900 dark:text-gray-200">AUD + 10% GST</p>
+		<p class="text-orange-300 font-bold mt-2">{plan.duration}</p>
+		<p class="text-xs mt-2 dark:text-gray-200">excl. GST</p>
 		<ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-200 xl:mt-10">
 			{
 				plan.features.map((item) => (
@@ -33,7 +33,12 @@ const { plan } = Astro.props;
 			}
 		</ul>
 	</div>
-	<Link href={plan.button.link} aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">
-		{plan.button.text || "Get Started"}
-	</Link>
+	<a
+		href={plan.button.link}
+		class="inline-flex items-center transform transition-transform hover:scale-105 px-3 py-2 mt-10 text-sm font-medium text-center text-white rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800">
+		Start Now
+		<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+			<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+		</svg>
+	</a>
 </div>
