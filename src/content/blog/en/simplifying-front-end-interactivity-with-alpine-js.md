@@ -1,5 +1,5 @@
 ---
-title: "Funding Development: Is Bootstrapping Right For You?"
+title: "Save Time and Money: Fractinoal CTO"
 draft: false
 author: Jayden Harrod
 tags:
