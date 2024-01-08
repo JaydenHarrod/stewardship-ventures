@@ -3,18 +3,12 @@ import logo from "assets/logo.svg";
 import { localizePath } from "astro-i18next";
 import { menuitems } from "@components/navbar/navbar.astro";
 import { t } from "i18next";
+import { Image } from "astro:assets";
 ---
 
 <footer class="pb-12 pt-28">
-	<div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
-		<!-- DECOMMENT HERE IF YOU WANT YOUR LOGO IN THE FOOTER -->
-		<!-- <a href={localizePath("/")} aria-label="logo" class="group flex items-center justify-center space-x-2">
-			<Image class="inline-block" src={logo} alt="Astros" width={30} height={30} />
-			<span class="text-semibold duration-300 text-gray-400 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-gray-200">
-				Astros
-			</span>
-		</a> -->
-		<ul role="list" class="flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 dark:text-gray-200 sm:gap-8">
+	<div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0 border-t-2 pt-10 border-neutral-950">
+		<ul role="list" class="flex flex-wrap items-center justify-center gap-4 pb-10 text-gray-600 dark:text-gray-200 sm:gap-8">
 			{
 				menuitems.map(
 					(item) =>
@@ -29,7 +23,13 @@ import { t } from "i18next";
 				)
 			}
 		</ul>
-		<div class="m-auto mt-4 flex w-max items-center justify-between space-x-4 text-gray-500 dark:text-gray-200">
+		<a href="/" aria-label="logo" class="group flex items-center justify-center space-x-2">
+			<Image class="inline-block" src="/images/logo-mark.png" alt="Astros" width={64} height={64} />
+		</a>
+		<div class="mt-4 text-center">
+			<span class="text-sm tracking-wide text-gray-500 dark:text-gray-200">Stewardship Ventures PTY LTD — ABN: 28673739369</span>
+		</div>
+		<div class="m-auto mt-10 flex w-max items-center justify-between space-x-4 text-gray-500 dark:text-gray-200">
 			<a
 				class="duration-300 hover:text-gray-900 dark:hover:text-gray-200"
 				href="https://twitter.com/jaydenharrod"
@@ -66,9 +66,6 @@ import { t } from "i18next";
 					</path>
 				</svg>
 			</a>
-		</div>
-		<div class="mt-4 text-center">
-			<span class="text-sm tracking-wide text-gray-500 dark:text-gray-200">Stewardship Ventures (ABN: 28673739369)</span>
 		</div>
 	</div>
 </footer>
