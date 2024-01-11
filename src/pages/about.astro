@@ -1,10 +1,6 @@
 ---
 import { changeLanguage } from "i18next";
 import Container from "@components/container.astro";
-import Features from "@components/features.astro";
-import Faq from "@components/faq.astro";
-import Hero from "@components/hero.astro";
-import Newsletter from "@components/newsletter.astro";
 import Layout from "@layouts/Layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
@@ -19,14 +15,16 @@ changeLanguage("en");
 		</Sectionhead>
 
 		<!-- ABOUT -->
-		<div class="mx-auto prose prose-xl text-center dark:prose-invert mt-14">
+		<div class="mx-auto max-w-3xl prose prose-xl text-center dark:prose-invert mt-14 mb-20">
 			<p>
 				Unlock the full potential of your business with Stewardship Ventures, your strategic partner in building exceptional software
 				products. As seasoned experts, we specialize in transforming the visions of non-technical entrepreneurs into profitable outcomes. Our
 				comprehensive services and multidisciplinary approach set us apart, ensuring your success every step of the way.
 			</p>
 		</div>
-		<div class="mx-auto prose prose-lg dark:prose-invert mt-24">
+
+		<section
+			class="mx-auto max-w-3xl prose prose-lg dark:prose-invert mb-0 md:mb-10 ring-2 dark:bg-neutral-800 dark:ring-neutral-700 p-16 rounded-xl">
 			<p class="text-4xl font-bold tracking-tight text-black text-center dark:text-gray-200 sm:text-4xl">Why Stewardship?</p>
 			<div class="pb-10">
 				<p class="font-bold text-center dark:text-orange-300">Seasoned Industry Experience:</p>
@@ -49,14 +47,14 @@ changeLanguage("en");
 					strong, collaborative partnerships.
 				</p>
 			</div>
-			<div class="pb-10">
+			<div class="">
 				<p class="font-bold text-center dark:text-blue-300">Administrative Efficiency:</p>
 				<p class="tracking-tight text-center dark:text-gray-300">
 					Experience the ease of working with a team that prioritizes efficiency, allowing you to focus on what you do best - growing your
 					business.
 				</p>
 			</div>
-		</div>
+		</section>
 		<!-- VALUES -->
 		<!-- <div class="mx-auto prose prose-lg dark:prose-invert mt-24">
 			<p class="text-4xl font-bold tracking-tight text-center dark:text-gray-200 sm:text-4xl">Values</p>
