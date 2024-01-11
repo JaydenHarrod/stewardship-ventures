@@ -34,7 +34,7 @@ export const menuitems = [
 <div
 	x-data="{open: window.innerWidth < 768 ? false : true}"
 	class="flex flex-col max-w h-16 md:mt-6 pt-4 px-4 top-0 mx-auto md:items-center md:justify-center md:flex-row md:px-6 lg:px-8 z-10 relative">
-	<div class="bg-neutral-900 rounded-xl border-2 border-neutral-950 flex pr-5 pl-4">
+	<div class="bg-neutral-900 rounded-xl border-2 border-neutral-950 flex flex-col md:flex-row md:pr-5 md:pl-4">
 		<div class="p-4 flex flex-row justify-between">
 			<a
 				href={localizePath("/")}
@@ -85,7 +85,7 @@ export const menuitems = [
 			x-transition:leave="transition ease-in duration-200"
 			x-transition:leave-start="opacity-100 transform scale-100"
 			x-transition:leave-end="opacity-0 transform scale-90"
-			class="bg-neutral-900 md:bg-transparent border md:border-none border-neutral-600 rounded-lg shadow-md shadow-neutral-800 md:shadow-none pt-4 md:pt-0 md:mt-0 lg:pl-8 md:items-center md:pb-0 flex-col gap-2 transition-all ease-out md:transition-none md:justify-center md:flex-row hidden">
+			class="bg-neutral-900 md:bg-transparent ring md:ring-none ring-neutral-950 rounded-lg py-4 md:pt-0 md:mt-0 lg:pl-8 md:items-center md:pb-0 flex-col gap-2 transition-all ease-out md:transition-none md:justify-center md:flex-row hidden">
 			<div class="flex flex-col flex-grow gap-6 r md:flex md:flex-row md:mx-auto">
 				{
 					menuitems.map((item) => (
