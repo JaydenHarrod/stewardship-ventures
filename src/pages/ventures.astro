@@ -1,0 +1,21 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingPlan from "@components/pricing.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="Stewardship Ventures - Pricing">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">Ventures</Fragment>
+		</Sectionhead>
+
+		<div class="mx-auto prose prose-xl text-center dark:prose-invert mt-14">
+			<p>Coming soon.</p>
+		</div>
+	</Container>
+</Layout>

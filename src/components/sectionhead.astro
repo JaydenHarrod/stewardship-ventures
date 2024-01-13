@@ -6,4 +6,7 @@ const { align = "center" } = Astro.props;
 	<h1 class="text-5xl font-bold pb-1 lg:tracking-tight capitalize dark:text-gray-200 text-transparent bg-clip-text">
 		<slot name="title">Title</slot>
 	</h1>
+	<h2 class="text-lg pt-1 lg:tracking-tight capitalize dark:text-gray-300 text-transparent bg-clip-text">
+		<slot name="subtitle" />
+	</h2>
 </div>
