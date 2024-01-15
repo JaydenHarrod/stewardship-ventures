@@ -4,18 +4,14 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import PricingPlan from "@components/pricing.astro";
-import AirSupport from "../../public/illustrations/airsupport.svg";
-import Analysis from "../../public/illustrations/analysis.svg";
-import Solutions from "../../public/illustrations/solutions.svg";
-import Teaching from "../../public/illustrations/teaching.svg";
-import VersionControl from "../../public/illustrations/version-control.svg";
+import ServiceOffering from "@components/service-offering.astro";
 
 changeLanguage("en");
 
 const pricingData = [
 	{
-		name: "Startup Consulting",
-		price: "$500/m",
+		name: "On Demand Advice",
+		price: "$450/m",
 		duration: "Asynchronous",
 		positions: 5,
 		features: [
@@ -76,10 +72,10 @@ const pricingData = [
 ];
 ---
 
-<Layout title="Stewardship Ventures - Startup Consulting Services">
+<Layout title="Stewardship Ventures - Technology Startup Services">
 	<Container>
 		<Sectionhead>
-			<Fragment slot="title">Startup Services</Fragment>
+			<Fragment slot="title">Technology Startup Services</Fragment>
 			<!-- <Fragment slot="subtitle">Technologists On Demand</Fragment> -->
 		</Sectionhead>
 
@@ -101,89 +97,7 @@ const pricingData = [
 			</p>
 		</div>
 
-		<section id="comparison" class="mx-auto max-w-4xl text-center mb-20 md:mb-60">
-			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-400 text-transparent bg-clip-text">
-				On Demand Services
-			</p>
-			<p class="mx-auto prose prose-xl text-center dark:prose-invert mt-14 mb-20 md:mb-40">
-				Protecting your runway and generating revenue are crucial, but preventing setbacks is equally significant. That's why we've developed
-				a unique solution to assist you at every stage of your startup, building a long-term relationship towards success.
-			</p>
-
-			<div class="flex flex-col items-center mb-5 md:mb-10 lg:flex-row">
-				<div class="lg:w-1/2 lg:text-left p-8 rounded-lg dark:bg-neutral-800 ring ring-neutral-700 transition-transform hover:scale-105">
-					<div class="flex flex-col gap-4">
-						<p class="font-bold text-neutral-200 text-lg">Introduction Call (free)</p>
-						<p class="text-neutral-200">
-							We're happy to speak to any founders, entrepreneurs, investors, agencies, or anyone else who wants to learn more about us.
-						</p>
-					</div>
-				</div>
-				<div class="lg:w-1/2">
-					<img src={Analysis.src} class="ml-20 hidden lg:block" width="220" />
-				</div>
-			</div>
-
-			<div class="flex flex-col items-center mb-5 md:mb-10 lg:flex-row">
-				<div class="lg:w-1/2 lg:text-right">
-					<img src={VersionControl.src} class="ml-48 hidden lg:block" width="200" />
-				</div>
-				<div class="lg:w-1/2 lg:text-right p-8 rounded-lg ring ring-neutral-700 dark:bg-neutral-800 transition-transform hover:scale-105">
-					<div class="flex flex-col gap-4">
-						<p class="font-bold text-neutral-200 text-lg">Startup Consulting Call ($300/hr)</p>
-						<p class="text-neutral-200">
-							Sit down virtually for 1 hour and discuss your startup pain points. We'll provide you with a report of our findings and
-							recommendations.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flex flex-col items-center mb-5 md:mb-10 lg:flex-row">
-				<div class="lg:w-1/2 lg:text-left p-8 rounded-lg dark:bg-neutral-800 ring ring-neutral-700 transition-transform hover:scale-105">
-					<div class="flex flex-col gap-4">
-						<p class="font-bold text-neutral-200 text-lg">Private Slack Channel (~500/m)</p>
-						<p class="text-neutral-200">
-							You're got a million questions and decisions. You need someone with the experience who has your back. Ask unlimited
-							questions via Slack.
-						</p>
-					</div>
-				</div>
-				<div class="lg:w-1/2">
-					<img src={Teaching.src} class="ml-20 hidden lg:block" width="220" />
-				</div>
-			</div>
-
-			<div class="flex flex-col items-center mb-5 md:mb-10 lg:flex-row">
-				<div class="lg:w-1/2 lg:text-right">
-					<img src={AirSupport.src} class="ml-60 hidden lg:block" width="150" />
-				</div>
-				<div class="lg:w-1/2 lg:text-right p-8 rounded-lg ring ring-neutral-700 dark:bg-neutral-800 transition-transform hover:scale-105">
-					<div class="flex flex-col gap-4">
-						<p class="font-bold text-neutral-200 text-lg">Fractional CTO (~7,500/m)</p>
-						<p class="text-neutral-200">
-							It doesn't make sense to hire a full-time CTO yet, maybe you're working with an agency or you're pre-revenue. We'll be
-							your in-house CTO to achieve outcomes for a fraction of the cost.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flex flex-col items-center mb-5 md:mb-10 lg:flex-row">
-				<div class="lg:w-1/2 lg:text-left p-8 rounded-lg ring ring-neutral-700 dark:bg-neutral-800 transition-transform hover:scale-105">
-					<div class="flex flex-col gap-4">
-						<p class="font-bold text-neutral-200 text-lg">Stage Three — Interim CTO (~15,000/m)</p>
-						<p class="text-neutral-200">
-							You're got revenue. You've got a team. You're growing fast. We'll become a fully fledged CTO whilst raising or recruiting
-							a full time exeuctive.
-						</p>
-					</div>
-				</div>
-				<div class="lg:w-1/2 lg:text-left">
-					<img src={Solutions.src} class="ml-20 hidden lg:block" width="220" />
-				</div>
-			</div>
-		</section>
+		<ServiceOffering />
 
 		<p
 			class="text-3xl font-bold text-center mt-20 mb-10 tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-400 text-transparent bg-clip-text">
