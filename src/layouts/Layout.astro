@@ -3,7 +3,6 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import { HeadHrefLangs } from "astro-i18next/components";
-import i18next from "i18next";
 import "@fontsource-variable/inter";
 import { ViewTransitions } from "astro:transitions";
 
@@ -12,8 +11,6 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
-const resolvedImageWithDomain = new URL("/meta/opengraph.png", Astro.site).toString();
 
 const { title } = Astro.props;
 
@@ -26,10 +23,8 @@ const makeTitle = title ?? "Stewardship Ventures";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#ffffff" />
-		<HeadHrefLangs />
 
+		<HeadHrefLangs />
 		<ViewTransitions />
 
 		<!-- Global CSS -->
@@ -37,28 +32,13 @@ const makeTitle = title ?? "Stewardship Ventures";
 
 		<SEO
 			title={makeTitle}
-			description="Stewardship Ventures helps businesses, communities, and brands introduce a software product for their customers to scale impact and growth."
+			description="Stewardship Ventures is an Australian startup consultancy specialising in software companies."
 			canonical={canonicalURL}
-			openGraph={{
-				basic: {
-					url: canonicalURL,
-					type: "website",
-					title: `Stewardship Ventures - Software Development`,
-					image: resolvedImageWithDomain,
-				},
-				image: {
-					alt: "Astros Homepage Screenshot",
-				},
-			}}
 		/>
 
 		<script is:inline>
 			function handleThemeChange() {
-				if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-					document.documentElement.classList.add("dark");
-				} else {
-					document.documentElement.classList.add("dark");
-				}
+				document.documentElement.classList.add("dark");
 			}
 			handleThemeChange();
 			document.removeEventListener("astro:after-swap", handleThemeChange);

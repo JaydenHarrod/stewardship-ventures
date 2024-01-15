@@ -5,6 +5,8 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import PricingPlan from "@components/pricing.astro";
 import ServiceOffering from "@components/service-offering.astro";
+import Consulting from "@components/consulting.astro";
+import Companies from "@components/companies.astro";
 
 changeLanguage("en");
 
@@ -75,8 +77,8 @@ const pricingData = [
 <Layout title="Stewardship Ventures - Technology Startup Services">
 	<Container>
 		<Sectionhead>
-			<Fragment slot="title">Technology Startup Services</Fragment>
-			<!-- <Fragment slot="subtitle">Technologists On Demand</Fragment> -->
+			<Fragment slot="title">Startup Services</Fragment>
+			<Fragment slot="subtitle">Technologists On Demand</Fragment>
 		</Sectionhead>
 
 		<div class="mx-auto prose prose-xl text-center dark:prose-invert mt-14 mb-20 md:mb-20">
@@ -95,9 +97,11 @@ const pricingData = [
 					Now our mission is to help you do the same.
 				</span>
 			</p>
+			<Companies />
 		</div>
 
 		<ServiceOffering />
+		<Consulting />
 
 		<p
 			class="text-3xl font-bold text-center mt-20 mb-10 tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-400 text-transparent bg-clip-text">
