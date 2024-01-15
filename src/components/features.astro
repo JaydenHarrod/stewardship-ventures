@@ -1,9 +1,20 @@
+---
+import Analysis from "../../public/illustrations/analysis.svg";
+import Solutions from "../../public/illustrations/solutions.svg";
+import Teaching from "../../public/illustrations/teaching.svg";
+---
+
 <div class="relative mx-auto max-w-4xl px-6 lg:px-8">
-	<section id="comparison" class="mx-auto max-w-4xl text-center mb-20 md:mb-60">
-		<p class="text-gray-400 mb-2 prose-md">A better way</p>
+	<section id="comparison" class="mx-auto max-w-4xl text-center mb-20 md:mb-80">
+		<p class="text-gray-400 mb-2 prose-md">A more efficient way</p>
 		<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-			Fractional Product Development
+			Fractional Development
 		</p>
+		<div class="flex flex-col items-center md:mb-10 justify-center gap-20 md:flex-row mt-10">
+			<img src={Teaching.src} width="150" />
+			<img src={Analysis.src} width="150" />
+			<img src={Solutions.src} width="150" />
+		</div>
 		<div class="flex flex-col lg:flex-row gap-6">
 			<div
 				class="lg:w-1/2 lg:text-left mt-8 p-8 rounded-lg shadow ring-2 dark:bg-neutral-800 dark:ring-neutral-700 transition-transform hover:scale-105">
@@ -29,11 +40,12 @@
 			</div>
 		</div>
 	</section>
+
 	<section id="greenfield" class="text-center mb-20 ring dark:ring-orange-200 dark:bg-neutral-950 p-10 rounded-xl">
 		<div class="mx-auto max-w-2xl text-center pt-4">
 			<p class="text-gray-400 mb-2 prose-md">Get your idea to market</p>
 			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-				Build A SaaS Product
+				Build A Technology Startup
 			</p>
 			<p class="mt-6 text-lg leading-8 dark:text-gray-200">
 				As specialists building SaaS products, we can help you build your idea from scratch. We'll deal with the technical architecture, vet
@@ -51,11 +63,12 @@
 			</a>
 		</div>
 	</section>
-	<section id="existing" class="text-center mb-20 md:mb-60 ring dark:ring-purple-200 dark:bg-neutral-950 p-10 rounded-xl">
+
+	<section id="existing" class="text-center mb-20 md:mb-80 ring dark:ring-purple-200 dark:bg-neutral-950 p-10 rounded-xl">
 		<div class="mx-auto max-w-2xl text-center pt-10 mb-4">
 			<p class="text-gray-400 mb-2 prose-md">Bring your technology in-house</p>
 			<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-				Scale A SaaS Product
+				Scale A Technology Startup
 			</p>
 			<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-200">
 				You've built a product which is awesome! Now you need to scale it. We'll help you bring your technology talent in-house, build a team,
@@ -70,23 +83,6 @@
 					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
 				</svg>
 			</a>
-		</div>
-	</section>
-	<section class="mx-auto max-w-4xl text-center mb-0 md:mb-40">
-		<p class="text-gray-400 mb-2 prose-md">Some of our favourite</p>
-		<p class="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-b from-neutral-100 to-neutral-300 text-transparent bg-clip-text">
-			Technologies
-		</p>
-		<div class="lg:text-left mt-8 p-8 rounded-lg shadow ring-2 dark:ring-neutral-700 dark:bg-neutral-800 transition-transform hover:scale-105">
-			<div class="flex flex-col gap-4">
-				<p class="text-white">💅 Frontend: React - TypeScript, Tailwind, Tanstack, Zod, Kinde</p>
-				<p class="text-white">📱 Mobile: React Native</p>
-				<p class="text-white">⚡️ Backend: Node, Ruby on Rails, PHP Laravel</p>
-				<p class="text-white">🤖 AI: TensorFlow, ChatGTP</p>
-				<p class="text-white">🌐 Infrastructure: Amazon Web Services (AWS)</p>
-				<p class="text-white">🧰 Dev Tools: Notion, Playwright, Sentry, CircleCI, Calibre</p>
-				<p class="text-white">💳 Payments: Stripe, Adyen, LemonSqueezy, AirWallex</p>
-			</div>
 		</div>
 	</section>
 </div>
