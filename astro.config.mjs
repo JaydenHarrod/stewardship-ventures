@@ -11,24 +11,24 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stewardship.ventures",
-  vite: {
-    define: {
-      __DATE__: `'${new Date().toISOString()}'`
-    }
-  },
-  image: {
-    service: passthroughImageService()
-  },
-  integrations: [tailwind(), sitemap(), astroI18next(), alpinejs()],
-  markdown: {
-    rehypePlugins: [rehypeSlug,
-    // This adds links to headings
-    [rehypeAutolinkHeadings, autolinkConfig]]
-  },
-  experimental: {
-    contentCollectionCache: true
-  },
-  output: "server",
-  adapter: vercel()
+	site: "https://stewardship.ventures",
+	vite: {
+		define: {
+			__DATE__: `'${new Date().toISOString()}'`,
+		},
+	},
+	image: {
+		service: passthroughImageService(),
+	},
+	integrations: [tailwind(), sitemap(), astroI18next(), alpinejs()],
+	markdown: {
+		rehypePlugins: [
+			rehypeSlug,
+			// This adds links to headings
+			[rehypeAutolinkHeadings, autolinkConfig],
+		],
+	},
+	experimental: {
+		contentCollectionCache: true,
+	},
 });
