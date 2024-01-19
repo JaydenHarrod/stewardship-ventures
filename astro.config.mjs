@@ -7,26 +7,28 @@ import rehypeSlug from "rehype-slug";
 import astroI18next from "astro-i18next";
 import alpinejs from "@astrojs/alpinejs";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
-	site: "https://stewardship.ventures",
-	vite: {
-		define: {
-			__DATE__: `'${new Date().toISOString()}'`,
-		},
-	},
-	image: {
-		service: passthroughImageService(),
-	},
-	integrations: [tailwind(), sitemap(), astroI18next(), alpinejs()],
-	markdown: {
-		rehypePlugins: [
-			rehypeSlug,
-			// This adds links to headings
-			[rehypeAutolinkHeadings, autolinkConfig],
-		],
-	},
-	experimental: {
-		contentCollectionCache: true,
-	},
+  site: "https://stewardship.ventures",
+  vite: {
+    define: {
+      __DATE__: `'${new Date().toISOString()}'`
+    }
+  },
+  image: {
+    service: passthroughImageService()
+  },
+  integrations: [tailwind(), sitemap(), astroI18next(), alpinejs()],
+  markdown: {
+    rehypePlugins: [rehypeSlug,
+    // This adds links to headings
+    [rehypeAutolinkHeadings, autolinkConfig]]
+  },
+  experimental: {
+    contentCollectionCache: true
+  },
+  output: "server",
+  adapter: vercel()
 });
