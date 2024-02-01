@@ -3,6 +3,7 @@ import { changeLanguage } from "i18next";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Booking from "@components/booking.astro";
 
 changeLanguage("en");
 ---
@@ -17,34 +18,7 @@ changeLanguage("en");
 		<div class="mt-16">
 			<div class="mx-auto lg:px-8">
 				<div class="flex flex-col items-center gap-8 mb-8">
-					<div class="max-w-lg p-6 rounded-lg shadow text-center ring-2 dark:bg-neutral-800 dark:ring-neutral-700">
-						<a href="https://app.cal.com/jayden" target="_blank">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-white">Schedule a free consultation</h5>
-						</a>
-						<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-							Let's turn your product vision into reality. Book a call to talk.
-						</p>
-						<a
-							href="https://app.cal.com/jayden"
-							target="_blank"
-							class="inline-flex items-center transform transition-transform hover:scale-105 px-3 py-2 mt-4 text-sm font-medium text-center text-white rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-purple-700 dark:hover:bg-purple-700 dark:focus:ring-neutral-800">
-							Book a call
-							<svg
-								class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 14 10">
-								<path
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M1 5h12m0 0L9 1m4 4L9 9">
-								</path>
-							</svg>
-						</a>
-					</div>
+					<Booking />
 
 					<iframe style="border:none;width:100%" height="600px" src="https://opnform.com/forms/contact-us-3joqj2"></iframe>
 				</div>
